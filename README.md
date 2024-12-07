@@ -32,7 +32,7 @@ Some Devices Have Issues And Hangover Will Not Work
 
 # Installation 
 
-1 - Install [Termux](https://f-droid.org/repo/com.termux_118.apk) And [Termux X11](https://raw.githubusercontent.com/olegos2/mobox/main/components/termux-x11.apk)
+1 - Install [Termux](https://f-droid.org/repo/com.termux_118.apk)  and  [Termux X11](https://raw.githubusercontent.com/olegos2/mobox/main/components/termux-x11.apk)
 
 2 - Install [InputBridge](https://raw.githubusercontent.com/olegos2/mobox/main/components/inputbridge.apk)
 
