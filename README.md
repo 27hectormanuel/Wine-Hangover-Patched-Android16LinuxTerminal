@@ -23,7 +23,9 @@ Patched Dxvk With Stripped Requirements To Run On Mediatek And Other Chipsets
 
 # Installation 
 
-1 - Install Termux And Termux X11
+1 - Install Termux And Termux X11 
+
+2 - Install InoutBridge
 
 ## Installation Command
 
@@ -41,7 +43,7 @@ bash ~/install_wine_hangover.sh
 </code>
 </pre>
 
-This Command Will Guide You And Automatically Installs All Recommended Files
+This Command Will Guide You And Automatically Installs All Required Files
 
 Use The Command wine-hangover-menu To Enter Start Interface Again After Exit
 
