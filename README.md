@@ -1,10 +1,10 @@
 # Wine-Hangover-Patched Credits 
 
-Wine Hangover Patched By Alexxrox 
+[Wine Hangover Patched](https://github.com/alexvorxx/hangover-termux/releases/tag/9.22) By Alexxrox 
 
-Mesa Native Wrapper By Xmem 
+[Mesa Native Wrapper](https://github.com/xMeM/termux-packages/actions) By Xmem 
 
-Patched Dxvk By Trass3r 
+[Patched Dxvk](https://github.com/Trass3r/dxvk/actions/runs/11881817846) By Trass3r 
 
 Script And Additional Files By Fcharan 
 
