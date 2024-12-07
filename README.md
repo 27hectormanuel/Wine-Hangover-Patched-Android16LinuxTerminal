@@ -40,3 +40,12 @@ chmod +x ~/install_wine_hangover.sh
 bash ~/install_wine_hangover.sh
 </code>
 </pre>
+
+This Command Will Guide You And Automatically Installs All Recommended Files
+
+Use The Command wine-hangover-menu To Enter Start Interface Again After Exit
+
+# Screenshot 
+
+![1000085668](https://github.com/user-attachments/assets/b431e1e9-549b-47d4-804b-583e61b882b2)
+
