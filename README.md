@@ -20,6 +20,10 @@ Option To Install InputBridge , Patched Dxvk , Start Menu Patch From wine-hangov
 
 Patched Dxvk With Stripped Requirements To Run On Mediatek And Other Chipsets 
 
+Required Dlls Are Added To Env Variables By Default 
+
+Pulse Audio Works
+
 
 # Installation 
 
