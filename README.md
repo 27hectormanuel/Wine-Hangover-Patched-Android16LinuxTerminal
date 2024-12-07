@@ -6,7 +6,7 @@ Mesa Native Wrapper By Xmem
 
 Patched Dxvk By Trass3r 
 
-Script And Additional Files By Fcharan 
+Script And Aditional Files By Fcharan 
 
 # Features
 
