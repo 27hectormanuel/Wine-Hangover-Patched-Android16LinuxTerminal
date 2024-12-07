@@ -25,7 +25,8 @@ Patched Dxvk With Stripped Requirements To Run On Mediatek And Other Chipsets
 
 1 - Install Termux And Termux X11
 
-2 - Copy And Paste This Command In Termux : termux-setup-storage
+2 - Copy And Paste This Command In Termux : ```bash
+termux-setup-storage
 export DEBIAN_FRONTEND=noninteractive
 echo 'DPkg::Options { "--force-confold"; }' | tee -a /data/data/com.termux/files/usr/etc/apt/apt.conf.d/local
 pkg update -y && pkg upgrade -y --assume-yes && pkg install -y wget
