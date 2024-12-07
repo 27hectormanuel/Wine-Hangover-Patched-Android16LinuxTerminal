@@ -25,7 +25,7 @@ Patched Dxvk With Stripped Requirements To Run On Mediatek And Other Chipsets
 
 1 - Install Termux And Termux X11 
 
-2 - Install InoutBridge
+2 - Install InputBridge
 
 ## Installation Command
 
