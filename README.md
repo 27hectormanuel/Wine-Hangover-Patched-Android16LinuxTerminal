@@ -25,9 +25,12 @@ Patched Dxvk With Stripped Requirements To Run On Mediatek And Other Chipsets
 
 1 - Install Termux And Termux X11
 
-## Installation Command 
+## Installation Command
 
-```bash
+Run the following command in your Termux:
+
+<pre>
+<code>
 termux-setup-storage
 export DEBIAN_FRONTEND=noninteractive
 echo 'DPkg::Options { "--force-confold"; }' | tee -a /data/data/com.termux/files/usr/etc/apt/apt.conf.d/local
@@ -35,3 +38,5 @@ pkg update -y && pkg upgrade -y --assume-yes && pkg install -y wget
 wget https://github.com/Fcharan/WinlatorMali/releases/download/0.0/install_wine_hangover.sh -O ~/install_wine_hangover.sh
 chmod +x ~/install_wine_hangover.sh
 bash ~/install_wine_hangover.sh
+</code>
+</pre>
