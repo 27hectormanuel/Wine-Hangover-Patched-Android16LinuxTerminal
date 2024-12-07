@@ -42,6 +42,7 @@ Run the following command in your Termux:
 
 <pre>
 <code>
+pkg install termux-am -y
 termux-setup-storage
 export DEBIAN_FRONTEND=noninteractive
 echo 'DPkg::Options { "--force-confold"; }' | tee -a /data/data/com.termux/files/usr/etc/apt/apt.conf.d/local
