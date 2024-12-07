@@ -24,6 +24,11 @@ Required Dlls Are Added To Env Variables By Default
 
 Pulse Audio Works
 
+# Note
+
+Only Some Games Are Working Now
+
+Some Devices Have Issues And Hangover Will Not Work
 
 # Installation 
 
@@ -54,4 +59,12 @@ Use The Command wine-hangover-menu To Enter Start Interface Again After Exit
 # Screenshot 
 
 ![1000085668](https://github.com/user-attachments/assets/b431e1e9-549b-47d4-804b-583e61b882b2)
+
+# Gameplay Video
+
+
+
+https://github.com/user-attachments/assets/8ae76b35-c97f-44da-aeec-9633f801f976
+
+
 
