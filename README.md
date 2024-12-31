@@ -59,7 +59,11 @@ Use The Command wine-hangover-menu To Enter Start Interface Again After Exit
 
 # Screenshot 
 
-![1000085668](https://github.com/user-attachments/assets/b431e1e9-549b-47d4-804b-583e61b882b2)
+![1000104235](https://github.com/user-attachments/assets/1f039dcd-bc16-4e10-a4ed-3566b1bc54c8)
+
+
+![1000104234](https://github.com/user-attachments/assets/1047137e-7fa9-4ac3-b63b-d40657887329)
+
 
 # Gameplay
 
