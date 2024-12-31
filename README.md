@@ -32,7 +32,7 @@ Some Devices Have Issues And Hangover Will Not Work
 
 # Installation 
 
-1 - Install [Termux](https://github.com/Fcharan/WinlatorMali/releases/download/0.0/Termux_0.118.1.apk)  and  [Termux X11](https://raw.githubusercontent.com/olegos2/mobox/main/components/termux-x11.apk)
+1 - Install [Termux](https://github.com/Fcharan/WinlatorMali/releases/download/0.0/termux-app_v0.118.1+github-debug_arm64-v8a.apk)  and  [Termux X11](https://github.com/Fcharan/WinlatorMali/releases/download/0.0/app-arm64-v8a-debug.apk)
 
 2 - Install [InputBridge](https://raw.githubusercontent.com/olegos2/mobox/main/components/inputbridge.apk)
 
