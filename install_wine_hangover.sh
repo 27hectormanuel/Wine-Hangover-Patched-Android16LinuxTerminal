@@ -6,6 +6,8 @@ pkg update -y && pkg upgrade -y
 echo "Installing required packages..."
 pkg install -y wget termux-tools
 
+pkg install bc
+
 echo "Downloading Wine Hangover setup script..."
 wget https://github.com/Fcharan/WinlatorMali/releases/download/0.0/wine_hangover_menu.sh -O ~/wine_hangover_menu.sh
 
