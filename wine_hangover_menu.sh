@@ -37,7 +37,7 @@ check_dependencies() {
     if [ ${#missing[@]} -ne 0 ]; then
         echo -e "${RED}Missing required dependencies: ${missing[*]}${NC}"
         echo -e "${YELLOW}Installing missing dependencies...${NC}"
-        pkg install -y "${missing[@]}"
+        sudo apt install -y "${missing[@]}"
     fi
 }
 
@@ -293,19 +293,19 @@ install_wine_hangover() {
     echo -e "${BLUE}Starting Wine Hangover installation...${NC}"
     check_system_requirements
     
-    if ! pkg update -y && pkg upgrade -y -o Dpkg::Options::="--force-confold"; then
+    if ! apt update -y && apt upgrade -y -o Dpkg::Options::="--force-confold"; then
         echo -e "${RED}Failed to update package lists. Check your internet connection.${NC}"
         return 1
     fi
     
-    pkg install -y -o Dpkg::Options::="--force-confold" tur-repo x11-repo
+    sudo apt install -y -o Dpkg::Options::="--force-confold" tur-repo x11-repo
 
     sed -i '1s/$/ tur-multilib/' /data/data/com.termux/files/usr/etc/apt/sources.list.d/tur.list
     pkg update -y && pkg upgrade -y -o Dpkg::Options::="--force-confold"
 
-    pkg install -y -o Dpkg::Options::="--force-confold" hangover termux-x11-*
+    sudo apt install -y -o Dpkg::Options::="--force-confold" hangover termux-x11-*
 
-    pkg install -y -o Dpkg::Options::="--force-confold" mangohud
+    sudo apt install -y -o Dpkg::Options::="--force-confold" mangohud
 
     local packages=(
         x11-repo tur-repo freetype git gnutls libandroid-shmem-static
@@ -324,7 +324,7 @@ install_wine_hangover() {
     for package in "${packages[@]}"; do
         ((current++))
         echo -e "${CYAN}[$current/$total] Installing $package...${NC}"
-        if ! pkg install -y -o Dpkg::Options::="--force-confold" "$package"; then
+        if ! sudo apt install -y -o Dpkg::Options::="--force-confold" "$package"; then
             echo -e "${RED}Failed to install $package${NC}"
             return 1
         fi
