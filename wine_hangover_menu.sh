@@ -301,7 +301,7 @@ install_wine_hangover() {
     sudo apt install -y -o Dpkg::Options::="--force-confold" tur-repo x11-repo
 
     sed -i '1s/$/ tur-multilib/' /data/data/com.termux/files/usr/etc/apt/sources.list.d/tur.list
-    pkg update -y && pkg upgrade -y -o Dpkg::Options::="--force-confold"
+    sudo apt update -y && sudo apt upgrade -y -o Dpkg::Options::="--force-confold"
 
     sudo apt install -y -o Dpkg::Options::="--force-confold" hangover termux-x11-*
 
