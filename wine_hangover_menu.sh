@@ -306,15 +306,16 @@ install_wine_hangover() {
     sudo apt install -y -o Dpkg::Options::="--force-confold" hangover x11-xserver-utils x11-apps*
 
     sudo apt install -y -o Dpkg::Options::="--force-confold" mangohud
-
 local packages=(
-    libfreetype6 git gnutls libx11 xorgproto libdrm libpixman libxfixes
-    libjpeg-turbo mesa-demos mesa-vulkan-drivers vulkan-tools
-    xtrans libxxf86vm xorg-xrandr xfonts-utils x11-xserver-utils
-    libxfont2 libxkbfile libpciaccess xcb-util-renderutil
-    xcb-util-image xcb-util-keysyms xcb-util-wm xorg-xkbcomp
-    xkeyboard-config libxdamage libxinerama libxshmfence
+    libfreetype6 git libgnutls30 libx11 xorgproto libdrm libpixman libxfixes
+    libjpeg-turbo mesa-vulkan-drivers vulkan-tools
+    libxxf86vm1 xfonts-utils x11-xserver-utils
+    libxfont2 libxkbfile1 libpciaccess-dev libxcb-util-dev
+    libxcb1 libxcb-render-util libxcb-image0 libxcb-keysyms1
+    libxcb-wm0 xorg-xkbcomp xkeyboard-config libxdamage1
+    libxinerama1 libxshmfence1
 )
+
 
 echo -e "${BLUE}Installing required packages...${NC}"
 local total=${#packages[@]}
