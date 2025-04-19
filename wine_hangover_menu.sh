@@ -298,17 +298,17 @@ install_wine_hangover() {
         return 1
     fi
     
-    sudo apt install -y -o Dpkg::Options::="--force-confold" tur-repo x11-repo
+    sudo apt install -y -o Dpkg::Options::="--force-confold" hangover x11-xserver-utils x11-apps mangohud
 
     sed -i '1s/$/ tur-multilib/' /data/data/com.termux/files/usr/etc/apt/sources.list.d/tur.list
     sudo apt update -y && sudo apt upgrade -y -o Dpkg::Options::="--force-confold"
 
-    sudo apt install -y -o Dpkg::Options::="--force-confold" hangover termux-x11-*
+    sudo apt install -y -o Dpkg::Options::="--force-confold" hangover x11-xserver-utils x11-apps*
 
     sudo apt install -y -o Dpkg::Options::="--force-confold" mangohud
 
     local packages=(
-        x11-repo tur-repo freetype git gnutls libandroid-shmem-static
+         tur-repo freetype git gnutls libandroid-shmem-static
         libx11 xorgproto libdrm libpixman libxfixes libjpeg-turbo
         mesa-demos mesa-zink pulseaudio termux-x11-nightly vulkan-tools
         xtrans libxxf86vm xorg-xrandr xorg-font-util xorg-util-macros
