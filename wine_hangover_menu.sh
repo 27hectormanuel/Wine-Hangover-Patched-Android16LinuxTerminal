@@ -308,7 +308,7 @@ install_wine_hangover() {
     sudo apt install -y -o Dpkg::Options::="--force-confold" mangohud
 
 local packages=(
-    freetype git gnutls libx11 xorgproto libdrm libpixman libxfixes
+    libfreetype6 git gnutls libx11 xorgproto libdrm libpixman libxfixes
     libjpeg-turbo mesa-demos mesa-vulkan-drivers vulkan-tools
     xtrans libxxf86vm xorg-xrandr xfonts-utils x11-xserver-utils
     libxfont2 libxkbfile libpciaccess xcb-util-renderutil
