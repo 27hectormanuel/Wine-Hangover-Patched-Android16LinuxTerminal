@@ -307,18 +307,33 @@ install_wine_hangover() {
 
     sudo apt install -y -o Dpkg::Options::="--force-confold" mangohud
 
-    local packages=(
-         tur-repo freetype git gnutls libandroid-shmem-static
-        libx11 xorgproto libdrm libpixman libxfixes libjpeg-turbo
-        mesa-demos mesa-zink pulseaudio termux-x11-nightly vulkan-tools
-        xtrans libxxf86vm xorg-xrandr xorg-font-util xorg-util-macros
-        libxfont2 libxkbfile libpciaccess xcb-util-renderutil
-        xcb-util-image xcb-util-keysyms xcb-util-wm xorg-xkbcomp
-        xkeyboard-config libxdamage libxinerama libxshmfence
-    )
-    
-    echo -e "${BLUE}Installing required packages...${NC}"
-    local total=${#packages[@]}
+local packages=(
+    freetype git gnutls libx11 xorgproto libdrm libpixman libxfixes
+    libjpeg-turbo mesa-demos mesa-vulkan-drivers vulkan-tools
+    xtrans libxxf86vm xorg-xrandr xfonts-utils x11-xserver-utils
+    libxfont2 libxkbfile libpciaccess xcb-util-renderutil
+    xcb-util-image xcb-util-keysyms xcb-util-wm xorg-xkbcomp
+    xkeyboard-config libxdamage libxinerama libxshmfence
+)
+
+echo -e "${BLUE}Installing required packages...${NC}"
+local total=${#packages[@]}
+
+for package in "${packages[@]}"; do
+    echo -e "${YELLOW}Installing $package...${NC}"
+    sudo apt install -y "$package" -o Dpkg::Options::="--force-confold"
+done
+
+echo -e "${GREEN}All required packages have been installed!${NC}"
+
+
+for package in "${packages[@]}"; do
+    echo -e "${YELLOW}Installing $package...${NC}"
+    sudo apt install -y "$package" -o Dpkg::Options::="--force-confold"
+done
+
+echo -e "${GREEN}All required packages have been installed!${NC}"
+
     local current=0
     
     for package in "${packages[@]}"; do
